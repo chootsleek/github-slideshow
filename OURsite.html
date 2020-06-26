@@ -7,50 +7,128 @@
    A {
     color: #3867ad;
    }
-   .menu {
-    padding: 4px;
-    border: 1px solid #333;
-    background: #dedd72;
-   }
-   .menu A {
-    color: navy;
-   }
+
     body {
-    margin: 40;
+
 background: #e5e6dc url("img/Grad2.png");
 background-repeat: repeat-x;
-
-   }
+}
    .layer{
-   float: right
+   margin: 0px
    }
-  </style>
+     .btn {
+   display: inline-block; /* Строчно-блочный элемент */
+   width: 65%;
+   background: #3867ad; /* Серый цвет фона */
+   color: #fff; /* Белый цвет текста */
+   padding: 1rem; /* Поля вокруг текста */
+   text-decoration: none; /* Убираем подчёркивание */
+   border-radius: 3px; /* Скругляем уголки */
+   margin-top: 3px
+  }
+    .btn1 {
+  display: inline-block; /* Строчно-блочный элемент */
+  background: #000; /* Серый цвет фона */
+  color: #fff; /* Белый цвет текста */
+  padding: 1rem 1.5rem; /* Поля вокруг текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  border-radius: 3px; /* Скругляем уголки */
+  margin-top: 3px
+ }
+  figure {
+border: 1px solid #ccc; /* рамка */
+background-color: #f1f0f0; /* цвет фона */
+padding: 5px; /* отступы от картинки */
+width: 182px; /* ширина картинки */
+}
+  figcaption {
+text-align: center; /* подпись по центру*/
+}
+{
+  padding: 0;
+  margin: 0;
+}
+
+.site,.wrap{
+  width: 100%;
+}
+.header, .footer{
+  width: 100%;
+  height: 60px;
+}
+
+.nav{
+  width: 250px;
+  padding: 15px;
+}
+
+.wrap {
+  display: flex;
+}
+
+.container{
+  margin: 20px;
+  width: 100%;
+    padding-left: 20px;
+    padding-bottom: 70px;
+}
+.footer{
+  height: 130px;
+bottom: 0;
+width: 100%;
+padding-left:15px;
+background: linear-gradient(0deg, #887265, #e5e6dc);
+}
+
+}
+ul {
+ margin-left: 0; /* Отступ слева в браузере IE и Opera */
+ padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+</style>
+
+
 </head>
 <body>
-  <button> Button 1</button><button> Button 2</button><button> Button 3</button>
-  <button> Button 4</button><button> Button 5</button><button> Button 6</button>
-  <input>
-      <p class="layer" > <img src="img/World3.png" align="right" width="50%"><p>
-  
-<p><a name="top"></a></p>
-<p><a href="#Thailand"><big>Thailand</big></a></p>
-<p><a href="#Darya"><big>Darya</big></a></p>
-<p><a href="#Cat"><big>Cat</big></a></p>
-<p><a href="#Kam"><big>Kamchatka</big></a></p>
-<p><a href="#TOG"><big>Togliatti</big></a></p>
-<h3>World maps</h3>
- <div class="menu">
-    <a href="img/6010174003.jpg" target="Map" >Political</a> |
-     <a href="img/10473195_0.jpg" target="Map">Phisical</a> |
-     <a href="img/20200211074111-2567.jpg" target="Map">Light pollution</a> |
-      <a href="img/World3.png" align="center" target="Map">png</a> |
-      <a href="content1.html" target="Map">Blank</a> </p>
+    <div class="site">
+      <div class="header" ><h1 align="center">OUR SITE</h1>
       </div>
-        <div>
-          <p class="layer" ><a href="https://ru.wikipedia.org/wiki/Солнечные_затмения_XXI_века">Sun's eclipses</a></p>
-  </div>
+    <div class="wrap">
+      <div class="nav">
+        <p class="layer" > <img src="img/World3.png" width="230px"><p>
+      <h2>Chapters</h2>
+      <div>
+        <a name="top"></a></p>
+
+        <ul>
+          <li> <a href="#Thailand" class="btn"><big>Thailand</big></a>
+          <li> <a href="#Darya" class="btn"><big>Darya</big></a>
+          <li> <a href="#Cat" class="btn"><big>Cat</big></a>
+          <li> <a href="#Kam" class="btn"><big>Kamchatka</big></a>
+          <li> <a href="#TOG" class="btn"><big>Togliatti</big></a>
+      </div>
     <div>
-      <p class="layer" > <img src="img/Esclipse.JPG"><p>
+      <figure class="layer">
+          <img src = "img/Esclipse.JPG" width="182px">
+            <figcaption ><a href="https://ru.wikipedia.org/wiki/Солнечные_затмения_XXI_века">Sun's eclipses XXI</a>
+            </figcaption>
+      </figure>
+      </div>
+    </div>
+
+<div class="container">
+
+<h2>World maps</h2>
+ <div class="menu">
+    <a href="img/6010174003.jpg"  class="btn1" target="Map" >Political</a>
+     <a href="img/10473195_0.jpg" class="btn1" target="Map">Phisical</a>
+     <a href="img/20200211074111-2567.jpg" class="btn1" target="Map">Light pollution</a>
+      <a href="img/World3.png" class="btn1 center" target="Map">PNG</a>
+      <a href="content1.html" class="btn1" target="Map">Blank</a> </p>
+
 
     </div>
     <p><iframe src="content1.html" width="750" height ="450" name ="Map" ></iframe></p>
@@ -63,7 +141,7 @@ background-repeat: repeat-x;
   <h3> DARYA </h3>
 
 <p><img src="img/3.jpg"
-        alt="Darya" width="800" border ="0"> </p>
+        alt="Darya" width="600" border ="0"> </p>
   <p><a href="img/DSC0337011.jpg" title='original' target="_self">Crop</a></p>
   <hr>
  <h3> Places to visit </h3>
@@ -80,7 +158,7 @@ background-repeat: repeat-x;
   <h2>Швейцария</h2>
   <p>Швейцария, страна в центре географической Европы, не имеющая выхода к морю, не присоединилась к геополитическому Европейскому союзу, хотя она подписала ряд европейских договоров.</p>
 </aside>
-  <form action="option1.php">
+  <form action="#">
    <p><select size="3" name="hero">
   <option>This one</option>
   <option>Other one</option>
@@ -94,7 +172,7 @@ background-repeat: repeat-x;
 <p><a name="Cat"></a></p>
 <h3> CAT </h3>
 <p><img src="img/IMG-20200618-WA0014.jpg"
-        alt="CAT" width="500" border ="0"> </p>
+        alt="CAT" width="600" border ="0"> </p>
 <p><a name="Kam"></a></p>
 <h3> Kamchatka </h3>
 <p><a href="https://photos.app.goo.gl/fZscYifkHKEiMaiu5"><img src="img/DSC_1 (570).JPG"
@@ -125,16 +203,21 @@ background-repeat: repeat-x;
   </tr>
  </table>
   <p><a href="#top">Top of the page</a></p>
+</div>
+</div>
+<div class="footer">
+  <nav>
+    <ul>
+      <li> <a href="#">О нас...</a>
+      <li> <a href="#">Связаться с нами!</a>
+      <li> <a href="#">Карта сайта</a>
+    </ul>
+  </nav>
+  <p><small>© 2020 The DARYARTY — <a href="#">Условия обслуживания</a></small></p>
+  </footer>
+</div>
+</div>
 
 
 </body>
-<nav>
-  <ul>
-    <li> <a href="/about">О нас...</a>
-    <li> <a href="/feedback">Связаться с нами!</a>
-    <li> <a href="/sitemap">Карта сайта</a>
-  </ul>
-</nav>
-<p><small>© 2020 The DARYARTY.RU — <a href="/tos">Условия обслуживания</a></small></p>
-</footer>
 </html>
