@@ -4,149 +4,228 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>OUR SITE</title>
     <style>
-   A {
+A {
     color: #3867ad;
    }
+a:hover{
+     background: #81d4ff  ;
+     }
+a:focus{
+  outline: solid blue;
+  }
 
-    body {
-
-background: #e5e6dc url("img/Grad2.png");
-background-repeat: repeat-x;
+a:active{
+  border-color:blue;
+  border-radius: 2px;
+  background: LightCyan;
+  color: black;
+  }
+body {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: #e5e6dc url("img/Grad2.png");
+  background-repeat: repeat-x;
 }
-   .layer{
-   margin: 0px
-   }
-     .btn {
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+ }
+body div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+.btn {
    display: inline-block; /* Строчно-блочный элемент */
-   width: 65%;
+   width: 70%;
    background: #3867ad; /* Серый цвет фона */
    color: #fff; /* Белый цвет текста */
    padding: 1rem; /* Поля вокруг текста */
+   font-size: 1.5rem;
    text-decoration: none; /* Убираем подчёркивание */
-   border-radius: 3px; /* Скругляем уголки */
+   border-radius: 6px; /* Скругляем уголки */
    margin-top: 3px
   }
-    .btn1 {
+.btn1 {
   display: inline-block; /* Строчно-блочный элемент */
   background: #000; /* Серый цвет фона */
   color: #fff; /* Белый цвет текста */
   padding: 1rem 1.5rem; /* Поля вокруг текста */
   text-decoration: none; /* Убираем подчёркивание */
-  border-radius: 3px; /* Скругляем уголки */
-  margin-top: 3px
+  border-radius: 6px; /* Скругляем уголки */
+  margin-top: 1px
  }
-  figure {
-border: 1px solid #ccc; /* рамка */
-background-color: #f1f0f0; /* цвет фона */
-padding: 5px; /* отступы от картинки */
-width: 182px; /* ширина картинки */
-}
-  figcaption {
-text-align: center; /* подпись по центру*/
-}
-{
-  padding: 0;
-  margin: 0;
+figure {
+  border: 1px solid #ccc; /* рамка */
+  background-color: #f1f0f0; /* цвет фона */
+  padding: 5px; /* отступы от картинки */
+  width: 100%; /* ширина картинки */
+  }
+figcaption {
+  text-align: center; /* подпись по центру*/
+  }
+
 }
 
 .site,.wrap{
-  width: 100%;
+  width: 80%;
+}
+.header{
+  text-align:center;
 }
 .header, .footer{
   width: 100%;
   height: 60px;
 }
 
-.nav{
-  width: 250px;
-  padding: 15px;
-}
 
 .wrap {
-  display: flex;
+      display: flex;
+      margin: auto;
+      margin: 0 auto;
 }
-
+.nav{
+      width: 220px;
+      padding: 15px;
+        float:left;
+    margin-right:0;
+    position: fixed;
+}
 .container{
-  margin: 20px;
-  width: 100%;
-    padding-left: 20px;
-    padding-bottom: 70px;
-}
+      width: 70%;
+      padding-left: 250px;
+      padding-bottom: 70px;
+
+      }
+.my-block {
+        display:  block;
+        overflow: hidden;
+         margin: 0px;
+      }
+
 .footer{
   height: 130px;
-bottom: 0;
-width: 100%;
-padding-left:15px;
-background: linear-gradient(0deg, #887265, #e5e6dc);
+  bottom: 0;
+  width: 100%;
+  padding-left:15px;
+ background: -webkit-linear-gradient(bottom, #887265, #e5e6dc);
+ background: -o-linear-gradient(bottom, #887265, #e5e6dc);
+ background: linear-gradient(to top, #887265, #e5e6dc);
 }
-
+#figure-hover{
+  display: inline-block;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 40px;
+  margin-top: -10px;
+  transition: 0.8s;
+}
+#figure-hover img{
+  border: 1px solid #666;
+  box-shadow: 0px 0px 5px 0px #000;
+  margin-bottom: 0px;
+}
+#figure-hover figcaption {
+  opacity: 0.4;
+  text-align:center;
+  transition: opacity 0.6s;
+}
+#figure-hover:hover {
+  transform:scale(1.10);
+}
+#figure-hover:hover figcaption{
+  opacity : 1;
 }
 ul {
- margin-left: 0; /* Отступ слева в браузере IE и Opera */
- padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
-}
-li {
+ margin-left: 10px; /* Отступ слева в браузере IE и Opera */
+ padding-left: 10px; /* Отступ слева в браузере Firefox, Safari, Chrome */
+ }
+  li {
     list-style-type: none; /* Убираем маркеры */
    }
+table {
+    width: 30%;
+    border-spacing:15px;
+    background-color: #e5e6dc;
+     }
+    th, td {
+    padding: 15px;
+  }
 </style>
 
 
 </head>
-<body>
-    <div class="site">
-      <div class="header" ><h1 align="center">OUR SITE</h1>
-      </div>
-    <div class="wrap">
-      <div class="nav">
-        <p class="layer" > <img src="img/World3.png" width="230px"><p>
-      <h2>Chapters</h2>
-      <div>
-        <a name="top"></a></p>
+  <body>
 
-        <ul>
-          <li> <a href="#Thailand" class="btn"><big>Thailand</big></a>
-          <li> <a href="#Darya" class="btn"><big>Darya</big></a>
-          <li> <a href="#Cat" class="btn"><big>Cat</big></a>
-          <li> <a href="#Kam" class="btn"><big>Kamchatka</big></a>
-          <li> <a href="#TOG" class="btn"><big>Togliatti</big></a>
+    <div class="site" >
+      <div class="header" ><h1>OUR SITE </h1>
       </div>
-    <div>
-      <figure class="layer">
-          <img src = "img/Esclipse.JPG" width="182px">
-            <figcaption ><a href="https://ru.wikipedia.org/wiki/Солнечные_затмения_XXI_века">Sun's eclipses XXI</a>
+        <p><a name="top"></a></p>
+    <div class="wrap">
+      <div class="nav" >
+        <div class="layer" > <a href="#top"><img src="img/World3.png" width="210px" alt="World map"></a></div>
+            <div>
+        <ul>
+          <li> <a href="#Thailand" class="btn">Thailand</a>
+          <li> <a href="#Darya" class="btn">Darya</a>
+          <li> <a href="#Cat" class="btn">Cat</a>
+          <li> <a href="#Kam" class="btn">Kamchatka</a>
+          <li> <a href="#TOG" class="btn">Togliatti</a>
+          </ul>
+      </div>
+
+      <a href="https://ru.wikipedia.org/wiki/Солнечные_затмения_XXI_века">
+
+        <figure class="my-block" id="figure-hover">
+          <img src = "img/Esclipse.JPG" width="100%">
+            <figcaption >Sun's eclipses XXI</a>
             </figcaption>
       </figure>
+
+    </a>
+
       </div>
-    </div>
 
 <div class="container">
 
-<h2>World maps</h2>
- <div class="menu">
+
+ <!-- <div class="menu">
     <a href="img/6010174003.jpg"  class="btn1" target="Map" >Political</a>
      <a href="img/10473195_0.jpg" class="btn1" target="Map">Phisical</a>
      <a href="img/20200211074111-2567.jpg" class="btn1" target="Map">Light pollution</a>
       <a href="img/World3.png" class="btn1 center" target="Map">PNG</a>
       <a href="content1.html" class="btn1" target="Map">Blank</a> </p>
 
-
     </div>
-    <p><iframe src="content1.html" width="750" height ="450" name ="Map" ></iframe></p>
-
+    <p><iframe src="img/128904.doc_html_m17c6c8ad.png" width="750" height ="430" name ="Map" ></iframe></p>
+  -->
+  <section>
+    <h2>World maps gallery</h2>
+    <figure>
+      <a href="#">
+        <img src="img/128904.doc_html_m17c6c8ad.png" width ="100%" alt="Карта">
+      </a>
+    </figure>
+    <button class="btn1" type="button">Назад</button>
+    <button class="btn1" type="button">Вперёд</button>
+  </section>
 <p><a name="Thailand"></a></p>
- <h1> Thailand &ndash; 2020</h1>
-   <p><a href="https://en.wikipedia.org/wiki/Thailand"><img src="img/DSC02902.jpg"></a></p>
+ <h2> Thailand 2020</h2>
+   <p id="figure-hover"><a href="https://en.wikipedia.org/wiki/Thailand"><img src="img/DSC02902.jpg" alt="Krabi"></a></p>
 
         <p><a name="Darya"></a></p>
-  <h3> DARYA </h3>
+  <h3> Darya </h3>
 
-<p><img src="img/3.jpg"
-        alt="Darya" width="600" border ="0"> </p>
-  <p><a href="img/DSC0337011.jpg" title='original' target="_self">Crop</a></p>
+<p id="figure-hover"><img src="img/3.jpg"
+        alt="Darya" width="600" > </p>
+  <p><a href="img/DSC0337011.jpg" title='original' target="_blank">Crop</a></p>
   <hr>
  <h3> Places to visit </h3>
 <nav>
-<ul type="circle">
+<ul>
  <li><a href="https://en.wikipedia.org/wiki/Maldives">Maldives</a></li>
  <li><a href="https://en.wikipedia.org/wiki/Finland">Finland</a></li>
  <li><a href="https://en.wikipedia.org/wiki/Bali">Bali</a></li>
@@ -170,24 +249,28 @@ li {
 
    <p> If you have any questions please send us an <a href="mailto:chootsleek@yandex.ru?subject=Question">e-mail</a></p>
 <p><a name="Cat"></a></p>
-<h3> CAT </h3>
-<p><img src="img/IMG-20200618-WA0014.jpg"
-        alt="CAT" width="600" border ="0"> </p>
+<h3> Le Chat </h3>
+<p id="figure-hover"><img src="img/IMG-20200618-WA0014.jpg" alt="CAT" width="600"> </p>
+
 <p><a name="Kam"></a></p>
 <h3> Kamchatka </h3>
-<p><a href="https://photos.app.goo.gl/fZscYifkHKEiMaiu5"><img src="img/DSC_1 (570).JPG"
-        alt="Kamchatka" width="600" border ="0"></a> </p>
+<p id="figure-hover"><a href="https://photos.app.goo.gl/fZscYifkHKEiMaiu5"><img src="img/DSC_1(570).JPG"
+        alt="Kamchatka" width="600"></a> </p>
 
 
 <p><a name="TOG"></a></p>
 <h3> Togliatti </h3>
-   <p><img src="img/DSC08555.jpg"
-        alt="Togliatti" width="600" border ="0"> </p>
-<table border="1" width="20%" cellpadding="5" bgcolor="pink">
+   <p id="figure-hover"><img src="img/DSC08555.jpg"
+        alt="Togliatti" width="600"> </p>
+
+<h3> Iceland </h3>
+   <p id="figure-hover"><img src="img/DSC08402.jpg"
+        alt="Iceland" width="600"> </p>
+<table>
     <caption>Table 1</caption>
     <colgroup>
-  <col span="2" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
-  <col span="2"style="background-color:LightCyan"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+  <col span="2" style="background:Khaki"><!--  цвет фона для первых двух столбцов -->
+  <col span="2" style="background-color:LightCyan"><!--  цвет фона для  таблицы-->
  </colgroup>
     <tr>
     <th colspan="4">English</th>
@@ -202,9 +285,11 @@ li {
     <td>Something</td><td>Anything</td><th>1</th><th>2</th>
   </tr>
  </table>
-  <p><a href="#top">Top of the page</a></p>
+  <div><a href="#top"  class="btn">Top of the page  &#8657;</a></div>
 </div>
 </div>
+
+
 <div class="footer">
   <nav>
     <ul>
@@ -214,7 +299,6 @@ li {
     </ul>
   </nav>
   <p><small>© 2020 The DARYARTY — <a href="#">Условия обслуживания</a></small></p>
-  </footer>
 </div>
 </div>
 
