@@ -1,0 +1,163 @@
+A {
+  color: #3867ad;
+  cursor: pointer;
+ }
+a:focus{
+outline: solid blue;
+}
+
+a:active{
+border-color:blue;
+border-radius: 2px;
+background: LightCyan;
+color: black;
+}
+body {
+max-width: 1150px;
+min-width: 750px;
+background: #e5e6dc url("img/Grad2.png");
+background-repeat: repeat-x;
+}
+article{
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+em, span{
+background-color: white;
+}
+body div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.btn {
+ display: inline-block; /* Строчно-блочный элемент */
+ width: 70%;
+ background: #3867ad; /* Серый цвет фона */
+ color: #fff; /* Белый цвет текста */
+ padding: 1rem; /* Поля вокруг текста */
+ font-size: 1.5rem;
+ text-decoration: none; /* Убираем подчёркивание */
+ border-radius: 6px; /* Скругляем уголки */
+ margin-top: 3px
+}
+.btn1 {
+display: inline-block; /* Строчно-блочный элемент */
+background: #000; /* Серый цвет фона */
+color: #fff; /* Белый цвет текста */
+padding: 1rem 1.5rem; /* Поля вокруг текста */
+font-size: 1.5rem;
+text-decoration: none; /* Убираем подчёркивание */
+border-radius: 6px; /* Скругляем уголки */
+margin-top: 1px
+}
+.btn:hover,
+.btn1:hover{
+    background: #81d4ff;
+    color: #000;
+    }
+
+figure {
+border: 0 solid #ccc; /* рамка */
+padding: 0px; /* отступы от картинки */
+width: auto; /* ширина картинки */
+}
+figcaption {
+text-align: center; /* подпись по центру*/
+}
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+text-align:center;
+}
+.header, .footer{
+width: 100%;
+height: 40px;
+}
+.nav{
+    width: 220px;
+    padding: 15px;
+    margin: auto;
+    position: fixed;
+}
+.container{
+    width: 70%;
+    padding-left: 260px;
+    padding-bottom: 70px;
+    flex-grow: 1;
+    }
+.my-block {
+      display:  block;
+      overflow: hidden;
+       margin: 0px;
+    }
+
+.footer{
+height: 130px;
+bottom: 0;
+width: 100%;
+padding-left:15px;
+background: -webkit-linear-gradient(bottom, #887265, #e5e6dc);
+background: -o-linear-gradient(bottom, #887265, #e5e6dc);
+background: linear-gradient(to top, #887265, #e5e6dc);
+}
+/*#figure-hover{
+display: inline-block;
+font-size: 18px;
+color: #222;
+margin-bottom: 40px;
+margin-top: -10px;
+transition: 0.8s;
+}
+#figure-hover img{
+box-shadow: 2px 2px 6px 0px #000;
+margin-bottom: 0px;
+}
+#figure-hover figcaption {
+opacity: 0.4;
+text-align: center;
+transition: 0.6s;
+}
+#figure-hover:hover {
+transform:scale(1.05);
+}
+#figure-hover:hover figcaption{
+opacity : 1;
+border: 2px dotted black;
+}*/
+ul {
+margin-left: 10px; /* Отступ слева в браузере IE и Opera */
+padding-left: 10px; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+ }
+table {
+  width: 30%;
+  border-spacing:15px;
+  background-color: #e5e6dc;
+   }
+  th, td {
+  padding: 15px;
+}
+.layer{
+margin-bottom: 40px;
+transition: 0.6s;
+}
+.bottom{
+  margin-left: -1.5rem;
+  margin-bottom: -30px;
+}
+.layer:hover {
+transform:scale(1.10);
+}
