@@ -3,198 +3,37 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>OUR SITE</title>
-    <style>
-A {
-    color: #3867ad;
-   }
-a:hover{
-     background: #81d4ff  ;
-     }
-a:focus{
-  outline: solid blue;
-  }
-
-a:active{
-  border-color:blue;
-  border-radius: 2px;
-  background: LightCyan;
-  color: black;
-  }
-body {
-  max-width: 1050px;
-  margin: 0 auto;
-  background: #e5e6dc url("img/Grad2.png");
-  background-repeat: repeat-x;
-}
-h1,
-h2,
-h3 {
-  font-size: 2rem;
- }
-body div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 10px;
-  }
-
-.btn {
-   display: inline-block; /* Строчно-блочный элемент */
-   width: 70%;
-   background: #3867ad; /* Серый цвет фона */
-   color: #fff; /* Белый цвет текста */
-   padding: 1rem; /* Поля вокруг текста */
-   font-size: 1.5rem;
-   text-decoration: none; /* Убираем подчёркивание */
-   border-radius: 6px; /* Скругляем уголки */
-   margin-top: 3px
-  }
-.btn1 {
-  display: inline-block; /* Строчно-блочный элемент */
-  background: #000; /* Серый цвет фона */
-  color: #fff; /* Белый цвет текста */
-  padding: 1rem 1.5rem; /* Поля вокруг текста */
-  font-size: 1.5rem;
-  text-decoration: none; /* Убираем подчёркивание */
-  border-radius: 6px; /* Скругляем уголки */
-  margin-top: 1px
- }
-figure {
-  border: 1px solid #ccc; /* рамка */
-  background-color: #f1f0f0; /* цвет фона */
-  padding: 5px; /* отступы от картинки */
-  width: 100%; /* ширина картинки */
-  }
-figcaption {
-  text-align: center; /* подпись по центру*/
-  }
-
-}
-
-.site,.wrap{
-  width: 80%;
-}
-.header{
-  text-align:center;
-}
-.header, .footer{
-  width: 100%;
-  height: 60px;
-}
-
-
-.wrap {
-      display: flex;
-      margin: auto;
-      margin: 0 auto;
-}
-.nav{
-      width: 220px;
-      padding: 15px;
-        float:left;
-    margin-right:0;
-    position: fixed;
-}
-.container{
-      width: 70%;
-      padding-left: 250px;
-      padding-bottom: 70px;
-
-      }
-.my-block {
-        display:  block;
-        overflow: hidden;
-         margin: 0px;
-      }
-
-.footer{
-  height: 130px;
-  bottom: 0;
-  width: 100%;
-  padding-left:15px;
- background: -webkit-linear-gradient(bottom, #887265, #e5e6dc);
- background: -o-linear-gradient(bottom, #887265, #e5e6dc);
- background: linear-gradient(to top, #887265, #e5e6dc);
-}
-#figure-hover{
-  display: inline-block;
-  font-size: 18px;
-  color: #222;
-  margin-bottom: 40px;
-  margin-top: -10px;
-  transition: 0.8s;
-}
-#figure-hover img{
-  border: 1px solid #666;
-  box-shadow: 0px 0px 5px 0px #000;
-  margin-bottom: 0px;
-}
-#figure-hover figcaption {
-  opacity: 0.4;
-  text-align:center;
-  transition: opacity 0.6s;
-}
-#figure-hover:hover {
-  transform:scale(1.10);
-}
-#figure-hover:hover figcaption{
-  opacity : 1;
-}
-ul {
- margin-left: 10px; /* Отступ слева в браузере IE и Opera */
- padding-left: 10px; /* Отступ слева в браузере Firefox, Safari, Chrome */
- }
-  li {
-    list-style-type: none; /* Убираем маркеры */
-   }
-table {
-    width: 30%;
-    border-spacing:15px;
-    background-color: #e5e6dc;
-     }
-    th, td {
-    padding: 15px;
-  }
-.layer{
-margin-left: -1.5rem;
-}
-</style>
-
+  <link rel="stylesheet" href="main.css">
 
 </head>
-  <body>
-
+<body>
     <div class="site" >
+        <p><a name="top"></a></p>
       <div class="header" ><img src="img/logo.png" alt="OUR SITE">
       </div>
-        <p><a name="top"></a></p>
-    <div class="wrap">
-      <div class="nav" >
-        <div class="layer" > <a href="#top"><img src="img/World3.png" width="230px" alt="World map"></a>
+  <div class="wrap">
+    <div class="nav" >
+        <div class="layer bottom"  > <a href="#top"><img src="img/World3.png" width="230px" alt="World map"></a>
         </div>
       <div>
         <ul>
           <li> <a href="#Thailand" class="btn">Thailand</a>
-          <li> <a href="#Darya" class="btn">Darya</a>
+          <li> <a href="#ice" class="btn">Iceland</a>
+          <li> <a href="#TOG" class="btn">Togliatti</a>
           <li> <a href="#Cat" class="btn">Cat</a>
           <li> <a href="#Kam" class="btn">Kamchatka</a>
-          <li> <a href="#TOG" class="btn">Togliatti</a>
-          </ul>
+        </ul>
       </div>
 
-      <a href="https://ru.wikipedia.org/wiki/Солнечные_затмения_XXI_века">
-
-        <figure class="my-block" id="figure-hover">
-          <img src = "img/Esclipse.JPG" width="100%">
-            <figcaption >Sun's eclipses XXI
-            </figcaption>
-      </figure>
-
+    <a href="https://ru.wikipedia.org/wiki/Солнечные_затмения_XXI_века">
+        <figure class="my-block layer">
+          <img src="img/Ecl3.jpg" width="100%">
+            <figcaption>Sun's eclipses XXI</figcaption>
+        </figure>
     </a>
+  </div>
 
-      </div>
-
-<div class="container">
+  <div class="container">
 
 
  <!-- <div class="menu">
@@ -207,76 +46,56 @@ margin-left: -1.5rem;
     </div>
     <p><iframe src="img/128904.doc_html_m17c6c8ad.png" width="750" height ="430" name ="Map" ></iframe></p>
   -->
-  <section>
-    <h2>World maps gallery</h2>
-    <figure>
-      <a href="#">
-        <img src="img/128904.doc_html_m17c6c8ad.png" width ="100%" alt="Карта">
-      </a>
-    </figure>
-    <button class="btn1" type="button">Назад</button>
-    <button class="btn1" type="button">Вперёд</button>
-  </section>
-<p><a name="Thailand"></a></p>
- <h2> Thailand 2020</h2>
-   <p id="figure-hover"><a href="https://en.wikipedia.org/wiki/Thailand"><img src="img/DSC02902.jpg" alt="Krabi"></a></p>
+  <article id="Thailand"><h2>Thailand 2020</h2></article>
+  <a href="Thai.html">
+    <p class="layer"><img src="img/3.jpg" alt="Tup Kaek" width="500"></p>
+  </a>
 
-        <p><a name="Darya"></a></p>
-  <h3> Darya </h3>
+    <article id="ice"><h3>Iceland</h3></article>
+    <a href="img/DSC08402.jpg">
+       <p class="layer"><img src="img/resized_DSC07273.jpg" alt="Iceland" width="500"> </p>
+    </a>
 
-<p id="figure-hover"><img src="img/3.jpg"
-        alt="Darya" width="600" > </p>
-  <p><a href="img/DSC0337011.jpg" title='original' target="_blank">Crop</a></p>
-  <hr>
- <h3> Places to visit </h3>
-<nav>
-<ul>
- <li><a href="https://en.wikipedia.org/wiki/Maldives">Maldives</a></li>
- <li><a href="https://en.wikipedia.org/wiki/Finland">Finland</a></li>
- <li><a href="https://en.wikipedia.org/wiki/Bali">Bali</a></li>
-  <li>...</li>
-</ul>
-</nav>
-<hr>
-<aside>
-  <h2>Швейцария</h2>
-  <p>Швейцария, страна в центре географической Европы, не имеющая выхода к морю, не присоединилась к геополитическому Европейскому союзу, хотя она подписала ряд европейских договоров.</p>
-</aside>
-  <form action="#">
-   <p><select size="3" name="hero">
-  <option>This one</option>
-  <option>Other one</option>
-  <option>New one</option>
-  <option>No one</option>
-</select>
-   <p><input type="submit" value="Send"></p>
-</form>
+    <article id="TOG"><h3>Togliatti</h3></article>
+               <p  class="layer"><img src="img/DSC08555.jpg"
+                    alt="Togliatti" width="500"> </p>
 
-   <p> If you have any questions please send us an <a href="mailto:chootsleek@yandex.ru?subject=Question">e-mail</a></p>
-<p><a name="Cat"></a></p>
-<h3> Le Chat </h3>
-<p id="figure-hover"><img src="img/IMG-20200618-WA0014.jpg" alt="CAT" width="600"> </p>
+  <article id="Cat"><h3>The Cat</h3></article>
+<p class="layer"><img src="img/IMG-20200618-WA0014.jpg" alt="CAT" width="500"> </p>
 
-<p><a name="Kam"></a></p>
-<h3> Kamchatka </h3>
-<p id="figure-hover"><a href="https://photos.app.goo.gl/fZscYifkHKEiMaiu5"><img src="img/DSC_1(570).JPG"
-        alt="Kamchatka" width="600"></a> </p>
+<article id="Kam"><h3>Kamchatka</h3></article>
+<p  class="layer"><a href="https://photos.app.goo.gl/fZscYifkHKEiMaiu5"><img src="img/DSC_1(570).JPG"
+        alt="Kamchatka" width="500"></a> </p>
+   <h3> Places to visit </h3>
+     <nav>
+       <ul>
+         <li><a href="https://en.wikipedia.org/wiki/Maldives">Maldives</a></li>
+         <li><a href="https://en.wikipedia.org/wiki/Finland">Finland</a></li>
+         <li><a href="https://en.wikipedia.org/wiki/Bali">Bali</a></li>
+         <li>...</li>
+       </ul>
+     </nav>
+     <hr>
+        <input type="color">
+        <input type="date">
+        <input type="range">
+        <section>
+          <h2>World maps gallery</h2>
+          <figure>
+            <a href="#">
+              <img src="img/128904.doc_html_m17c6c8ad.png" width ="100%" alt="Карта">
+            </a>
+          </figure>
+          <button class="btn1" type="button">Назад</button>
+          <button class="btn1" type="button">Вперёд</button>
+        </section>
 
-
-<p><a name="TOG"></a></p>
-<h3> Togliatti </h3>
-   <p id="figure-hover"><img src="img/DSC08555.jpg"
-        alt="Togliatti" width="600"> </p>
-
-<h3> Iceland </h3>
-   <p id="figure-hover"><img src="img/DSC08402.jpg"
-        alt="Iceland" width="600"> </p>
 <table>
     <caption>Table 1</caption>
     <colgroup>
-  <col span="2" style="background:Khaki"><!--  цвет фона для первых двух столбцов -->
-  <col span="2" style="background-color:LightCyan"><!--  цвет фона для  таблицы-->
- </colgroup>
+      <col span="2" style="background:Khaki"><!--  цвет фона для первых двух столбцов -->
+      <col span="2" style="background-color:LightCyan"><!--  цвет фона для  таблицы-->
+    </colgroup>
     <tr>
     <th colspan="4">English</th>
    </tr>
@@ -289,17 +108,33 @@ margin-left: -1.5rem;
    <tr>
     <td>Something</td><td>Anything</td><th>1</th><th>2</th>
   </tr>
+  <tr>
+   <td>Someway</td><td>Anyway</td><th>1</th><th>2</th>
+ </tr>
+ <tr>
+  <td>Somehow</td><td>Anyhow</td><th>1</th><th>2</th>
+</tr>
  </table>
   <div><a href="#top"  class="btn">Top of the page  &#8657;</a></div>
 </div>
 </div>
-
+<form action="img/DSC08814.jpg">
+ <p><select size="3" name="hero">
+<option>This one</option>
+<option>Other one</option>
+<option>New one</option>
+<option>No one</option>
+</select>
+ <div>
+   <input class="btn1" type="submit" value="Send">
+</div>
+</form>
 
 <div class="footer">
   <nav>
     <ul>
       <li> <a href="#">О нас...</a>
-      <li> <a href="#">Связаться с нами!</a>
+      <li> <a href="mailto:chootsleek@yandex.ru?subject=Question">Связаться с нами!</a>
       <li> <a href="#">Карта сайта</a>
     </ul>
   </nav>
