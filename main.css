@@ -12,6 +12,10 @@ border-radius: 2px;
 background: LightCyan;
 color: black;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 body {
 max-width: 1150px;
 min-width: 750px;
@@ -33,7 +37,6 @@ body div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px;
 }
 
 .btn {
@@ -74,39 +77,38 @@ text-align: center; /* подпись по центру*/
 
 .wrap{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 70px;
 }
 
 .header{
-text-align:center;
+text-align: center;
+margin-top: -30px;
 }
 .header, .footer{
 width: 100%;
-height: 40px;
+height: 80px;
 }
-.nav{
-    width: 220px;
+.anyContainer {
+  flex: 0 0 270px;
+}
+.nav {
     padding: 15px;
     margin: auto;
     position: fixed;
 }
 .container{
-    width: 70%;
-    padding-left: 260px;
-    padding-bottom: 70px;
-    flex-grow: 1;
+        flex-grow: 0;
     }
 .my-block {
       display:  block;
       overflow: hidden;
-       margin: 0px;
+       margin-left: 20px;
     }
 
 .footer{
 height: 130px;
-bottom: 0;
 width: 100%;
-padding-left:15px;
 background: -webkit-linear-gradient(bottom, #887265, #e5e6dc);
 background: -o-linear-gradient(bottom, #887265, #e5e6dc);
 background: linear-gradient(to top, #887265, #e5e6dc);
@@ -155,8 +157,8 @@ margin-bottom: 40px;
 transition: 0.6s;
 }
 .bottom{
-  margin-left: -1.5rem;
-  margin-bottom: -30px;
+  margin-left: -0.5rem;
+  margin-bottom: -10px;
 }
 .layer:hover {
 transform:scale(1.10);

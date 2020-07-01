@@ -1,0 +1,68 @@
+a {
+  color: navy;
+  }
+a:hover {
+  text-decoration: underline;
+  }
+a:focus{
+  outline: solid blue;
+  }
+body {
+  background: #e5e6dc
+}
+.site {
+    max-width: 1150px;
+    min-width: 750px;
+  }
+.header{
+  text-align: center;
+  }
+.flex {
+  display: flex;
+  justify-content: center;
+  }
+.flex div{
+  padding: 10px;
+  }
+.anyContainer {
+  flex: 0 0 250px;
+  height: auto;
+}
+.nav {
+   position: fixed;
+   }
+.biglet{
+  font-size: 1.5rem;
+}
+.container {
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+}
+.nav ul {
+  width: 100%;
+  margin-left: -2rem;
+  }
+  .nav li {
+  list-style-type: none;
+ }
+.btn {
+  display: block; /* Строчно-блочный элемент */
+  width: auto;
+  background: #3867ad;
+  color: #fff; /* Белый цвет текста */
+  padding: 1rem; /* Поля вокруг текста */
+  font-size: 1.5rem;
+  text-decoration: none; /* Убираем подчёркивание */
+  border-radius: 6px; /* Скругляем уголки */
+  margin-top: 3px
+  }
+.btn:hover {
+  background: #81d4ff;
+  color: #000;
+  }
